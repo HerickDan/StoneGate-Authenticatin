@@ -1,8 +1,17 @@
+'use client'
+
 import { styles } from "./styles";
 import cadeadoImg from "../../../public/cadeado.png";
 import Image from "next/image";
-import { Button} from "@mui/material";
+import { Button } from "@mui/material";
+import { redirect } from "next/navigation";
 const Welcome = () => {
+
+  const redirectUser = ()=>{
+    redirect('/login')
+  }
+
+
   return (
     <div style={styles.box}>
       <div style={styles.divs}>
@@ -18,15 +27,28 @@ const Welcome = () => {
         <Image
           src={cadeadoImg}
           alt=""
-          style={{ width: "60%", height: "80%" }}
+          style={{ width: "35%", height: "65%" }}
         />
       </figure>
-         <div style={styles.containerButton}>
-         <Button color='secondary' size='medium' variant="contained" style={styles.button}>Login</Button>
-         <Button color='secondary' size='medium' variant="contained" style={styles.button}>Cadastre-se</Button>
-         </div>
+      <div style={styles.containerButton}>
+        <Button
+          size="medium"
+          variant="contained"
+          style={styles.button}
+          onClick={redirectUser}
+        >
+          Login
+        </Button>
+        <Button
+          size="medium"
+          variant="contained"
+          style={styles.button}
+        >
+          Cadastre-se
+        </Button>
+      </div>
     </div>
   );
 };
 
-export default Welcome
+export default Welcome;

@@ -4,7 +4,8 @@ export const styles: Record<string, CSSProperties> = {
   box: {
     width: '70%',
     height: '65vh',
-    color: "#04e01a",
+    color: "#281a1a",
+    backgroundColor:'#fff2d4',
     border: 'solid 2px',
     borderRadius: '4px',
     padding: '14px',
@@ -21,7 +22,7 @@ export const styles: Record<string, CSSProperties> = {
   logoName: {
     fontFamily: 'Gemunu Libre, sans-serif',
     fontSize: '5em', 
-    color: '#6f52e4',
+    color: '#ff8826',
     fontWeight: '600',
     textAlign: 'center',
   },
@@ -46,7 +47,10 @@ export const styles: Record<string, CSSProperties> = {
   },
   button:{
     width:'40%',
+    marginTop:'5%',
+    height:'30%',
     fontWeight:700,
     fontSize: '1.8em', 
+    backgroundColor:'#ff8826'
   }
 };

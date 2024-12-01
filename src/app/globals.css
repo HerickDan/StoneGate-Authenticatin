@@ -5,7 +5,9 @@
 }
 
 body{
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 71%, rgba(48,2,44,0.9444152661064426) 95%);
+  background-image: url('../../public/fundo.jpeg');
+  background-size: cover;
+  display:flex;
   justify-content: center;
   align-items: center;
 }
