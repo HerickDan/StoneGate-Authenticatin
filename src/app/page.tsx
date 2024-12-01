@@ -1,9 +1,10 @@
-import { LoginForm } from "@/pages/login/page";
+import Welcome from "@/components/welcome";
+import { styles } from "./styles";
 
 export default function Home() {
   return (
-    <div>
-        <LoginForm/>
+    <div style={styles.pageSize}>
+      <Welcome/>
     </div>
   );
 }
