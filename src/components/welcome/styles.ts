@@ -5,7 +5,7 @@ export const styles: Record<string, CSSProperties> = {
     width: '70%',
     height: '65vh',
     color: "#281a1a",
-    backgroundColor:'#fff2d4',
+    backgroundColor:'#fffffd',
     border: 'solid 2px',
     borderRadius: '4px',
     padding: '14px',

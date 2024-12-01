@@ -4,14 +4,10 @@ import { styles } from "./styles";
 import cadeadoImg from "../../../public/cadeado.png";
 import Image from "next/image";
 import { Button } from "@mui/material";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+
 const Welcome = () => {
-
-  const redirectUser = ()=>{
-    redirect('/login')
-  }
-
-
+  const router = useRouter()
   return (
     <div style={styles.box}>
       <div style={styles.divs}>
@@ -35,7 +31,7 @@ const Welcome = () => {
           size="medium"
           variant="contained"
           style={styles.button}
-          onClick={redirectUser}
+          onClick={()=>router.push('/login')}
         >
           Login
         </Button>
