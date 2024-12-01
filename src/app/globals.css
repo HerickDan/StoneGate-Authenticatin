@@ -1,7 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body{
-  background-image: url('../../public/fundo.jpeg');
-  background-size: cover;
-  display:flex;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 71%, rgba(48,2,44,0.9444152661064426) 95%);
   justify-content: center;
   align-items: center;
 }
