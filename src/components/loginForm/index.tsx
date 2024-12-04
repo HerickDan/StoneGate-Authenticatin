@@ -1,32 +1,38 @@
-import Image from "next/image";
+"use client";
+
 import { styles } from "./styles";
-import fundo from '../../../public/fundo.jpeg'
-import { Button } from "@mui/material";
-const LoginForm = () => {
+import cadeadoImg from "../../../public/cadeado.png";
+import Image from "next/image";
+import { FormControl, TextField } from "@mui/material";
+
+const Welcome = () => {
+  //const router = useRouter() --> para rotas futuras
+
   return (
     <div style={styles.box}>
+      <figure style={styles.divs}>
         <Image
-            style={{ 
-                height:'5%',
-                width: "100%",}}
-            src={fundo}
-            alt=''
+          src={cadeadoImg}
+          alt=""
+          style={{ width: "30%", height: "60%" }}
         />
-      <form action="" style={styles.backgroundForm}>
-        <h1 style={styles.title}>Login</h1>
-        <label style={styles.label} htmlFor="email">Email</label>
-        <input id='email' style={styles.input}/>
-        <label style={styles.label} htmlFor="password">Senha</label>
-        <input id='password' style={styles.input}/>
-        <Button variant="contained">
-            Entrar
-        </Button>
-        <Button variant="contained">
-            Entrar
-        </Button>
-      </form>
+      </figure>
+      <header
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={styles.title}>LOGIN</h1>
+        <p style={styles.slogan}>Entre com seu email e senha.</p>
+      </header>
+      <FormControl fullWidth>
+        <TextField label='Email' style={styles.input} margin="dense" color='secondary' size="medium"/>
+        <TextField label='Senha' style={styles.input} color='secondary'/>
+      </FormControl>
     </div>
   );
 };
 
-export default LoginForm;
+export default Welcome;

@@ -1,33 +1,34 @@
 import { CSSProperties } from "react";
 
-export const styles: Record<string, CSSProperties>={
-    box:{
-        width:'30%',
-        display:'flex',
-        flexDirection:'column'
-    }, 
-    backgroundForm:{
-        margin:0,
-        padding:'2%',
-        background:'rgba(255, 255, 255, 0.5)',
-        height:'50vh',
-        backdropFilter: 'blur(2px)',
-        display:'flex',
-        flexDirection:'column',
-    },
-    title:{
-        fontFamily: 'Gemunu Libre, sans-serif',
-        color:'black',
-        marginBottom:'5%'
-    },
-    input:{
-        height:'10%',
-        marginBottom:'5%'
-    },
-    label:{
-
-    },
-    button:{
-
-    }
-}
+export const styles: Record<string, CSSProperties> = {
+  box: {
+    width: '30%',
+    height: '90vh',
+    color: "#281a1a",
+    background: 'linear-gradient(180deg, rgba(246,158,70,1) 0%, rgba(155,70,252,0.9528186274509804) 100%)',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
+    border: 'solid 2px',
+    borderRadius: '20px',
+    padding: '14px',
+    boxSizing: 'border-box', 
+    overflow: 'hidden', 
+    textAlign:'center',
+  },
+  title: {
+    fontSize: '3em', 
+    wordWrap: 'break-word', 
+    color:'white',
+    textAlign: 'center',
+    marginTop:'2%'
+  },
+  slogan: {
+    fontSize: '1.2em',
+    wordWrap: 'break-word',
+    textAlign: 'center',
+    width:'100%',
+    marginTop:'2%'
+  },
+  input:{
+    marginTop:'5%'
+  },
+};
