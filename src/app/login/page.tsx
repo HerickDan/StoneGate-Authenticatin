@@ -1,4 +1,4 @@
-import LoginForm from '@/components/login'
+import LoginForm from '@/components/loginForm'
 import {styles} from './style'
 
 
