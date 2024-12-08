@@ -1,11 +1,16 @@
+'use client'
+import dynamic from 'next/dynamic'
 import {styles} from './style'
-import RegisterForm from '@/components/registerForm'
 
+const RegisterFormComponent = dynamic(()=>import('../../components/registerForm'),{
+    ssr:false
+  })
+  
 
 const LoginPage = () =>{
     return(
         <div style={styles.page}>
-            <RegisterForm/>
+            <RegisterFormComponent/>
         </div>
     )
 }
