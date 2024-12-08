@@ -28,7 +28,15 @@ export const styles: Record<string, CSSProperties> = {
     width:'100%',
     marginTop:'2%'
   },
-  input:{
-    marginTop:'5%'
+  form:{
+   width:'100%', 
+   padding:0, 
+   display:'flex', 
+   flexDirection:'column', 
+   justifyContent:'space-between', 
+   height:'45%',
+    marginTop:'5%',
+    fontWeight:'550',
+    fontSize:'20px'
   },
 };
