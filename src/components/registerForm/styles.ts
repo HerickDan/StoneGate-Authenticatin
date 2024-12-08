@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 
 export const styles: Record<string, CSSProperties> = {
   box: {
-    width: '35%',
+    width: '37%',
     height: '90vh',
     color: "#281a1a",
     background: 'linear-gradient(180deg, rgba(246,158,70,1) 0%, rgba(155,70,252,0.9528186274509804) 100%)',
@@ -39,4 +39,10 @@ export const styles: Record<string, CSSProperties> = {
     fontWeight:'550',
     fontSize:'20px'
   },
+  lineInput:{
+    width:'100%',
+    display:'flex',
+    justifyContent:'space-between',
+    marginBottom:'0.5em',
+  }
 };

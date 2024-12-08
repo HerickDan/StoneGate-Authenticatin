@@ -28,20 +28,25 @@ const Welcome = () => {
         <h2 style={styles.logoName}>SECUREPASS</h2>
       </header>
       <p style={styles.slogan}>
-        O melhor sistema de cadastro, <br/>
+        O melhor sistema de cadastro, <br />
         gestão e autenticação de usuários
       </p>
       <div style={styles.containerButton}>
         <Button
           size="medium"
           variant="contained"
-          style={{...styles.button, backgroundColor:"#3f0087"}}
+          style={{ ...styles.button, backgroundColor: "#3f0087" }}
           onClick={() => router.push("/login")}
         >
           Login
         </Button>
-        <Button size="medium" variant="contained" style={styles.button}>
-         Registrar
+        <Button
+          size="medium"
+          variant="contained"
+          style={styles.button}
+          onClick={() => router.push("/register")}
+        >
+          Registrar
         </Button>
       </div>
     </div>

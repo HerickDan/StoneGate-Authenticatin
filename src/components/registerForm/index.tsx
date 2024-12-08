@@ -5,7 +5,7 @@ import cadeadoImg from "../../../public/cadeado.png";
 import Image from "next/image";
 import { TextField, Switch, Button } from "@mui/material";
 import { useState } from "react";
-const LoginForm = () => {
+const RegisterForm = () => {
   //const router = useRouter() --> para rotas futuras
   const [checked, setChecked] = useState(false);
   const verifyChecked = checked === true ? false : true;
@@ -26,16 +26,33 @@ const LoginForm = () => {
           alignItems: "center",
         }}
       >
-        <h1 style={styles.title}>LOGIN</h1>
-        <p style={styles.slogan}>Entre com seu email e senha.</p>
+        <h1 style={styles.title}>Registro</h1>
+        <p style={styles.slogan}>
+          Insira seus dados para realizar seu registro.
+        </p>
       </header>
       <form style={styles.form}>
-        <TextField label="Email" color="secondary" size="medium" />
-        <TextField
-          label="Senha"
-          color="secondary"
-          type={checked === true ? "text" : "password"}
-        />
+        <article style={styles.lineInput}>
+          <TextField size="small" label="Nome" />
+          <TextField size="small" label="Sobre nome" />
+        </article>
+        <article style={styles.lineInput}>
+          <TextField size="small" label="Email" />
+          <TextField size="small" label="Confirmar email" />
+        </article>
+        <article style={styles.lineInput}>
+          <TextField
+            size="small"
+            label="Senha"
+            type={checked === true ? "text" : "password"}
+          />
+          <TextField
+            size="small"
+            label="confirmar senha"
+            type={checked === true ? "text" : "password"}
+          />
+        </article>
+
         <article
           style={{
             display: "flex",
@@ -61,11 +78,11 @@ const LoginForm = () => {
           size="large"
           sx={{ backgroundColor: "#3f0087", marginTop: "5%" }}
         >
-          Entrar
+          Registrar
         </Button>
       </form>
     </div>
   );
 };
 
-export default LoginForm;
+export default RegisterForm;
